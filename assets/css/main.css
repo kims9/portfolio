@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
-/*
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2706,27 +2700,27 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				/* background-color: #f2849e; */
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				/* background-color: #7ecaf6; */
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				/* background-color: #7bd0c1; */
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+				/* background-color: #c75b9b; */
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
+				/* background-color: #ae85ca; */
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				/* background-color: #8499e7; */
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
@@ -3160,6 +3154,35 @@ input, select, textarea {
 				padding: 0em 0 4em 0 ;
 			}
 
+		}
+		.gallery-container{
+			max-width: 1224px;
+			width: 90%;
+			margin: auto;
+			padding: 40px 0;
+		}
+		
+		.photo-gallery{
+			display: flex;
+			gap: 20px;
+		}
+		
+		.photo-column{
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+		
+		.artwork img{
+			width: 100%;
+			height: 100%;
+			border: 5px;
+			object-fit: cover;
+		}
+		@media(max-width:768px){
+			.photo-gallery{
+				flex-direction: column;
+			}
 		}
 
 /* Footer */
